@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">AppForoPaco</string>
+    <string name="welcome">Bienvenido a Foro Paco</string>
+    <string name="login">Introduzca su numero de telefono para entrar</string>
+    <string name="buttonLogin">Entrar</string>
+    <string name="title_activity_temas">TemasActivity</string>
+    <string name="title_activity_comentarios">ComentariosActivity</string>
+</resources>
