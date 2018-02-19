@@ -37,6 +37,10 @@ INJECTED from D:\proyectos-android2\AppForoPaco\app\src\main\AndroidManifest.xml
 		INJECTED from D:\proyectos-android2\AppForoPaco\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from D:\proyectos-android2\AppForoPaco\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from D:\proyectos-android2\AppForoPaco\app\src\main\AndroidManifest.xml:4:5-66
+	android:name
+		ADDED from D:\proyectos-android2\AppForoPaco\app\src\main\AndroidManifest.xml:4:22-64
 application
 ADDED from D:\proyectos-android2\AppForoPaco\app\src\main\AndroidManifest.xml:5:5-27:19
 MERGED from [com.android.support:design:26.1.0] C:\Users\Alejandro\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\9c4e9acbbcb4d34e46b6381e33b7b692\AndroidManifest.xml:25:5-29:19

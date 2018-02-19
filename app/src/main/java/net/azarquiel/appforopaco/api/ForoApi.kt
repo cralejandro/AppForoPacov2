@@ -19,31 +19,29 @@ interface ForoApi {
 
 
     @GET("users")
-    fun getUsers(): Observable<Users>
+    fun getUsers(): Observable<Respuesta>
 
     @GET("user/{tlf}")
-    fun getUser(@Path ("tlf")tlf:String)
-
-
+    fun getUser(@Path ("tlf")tlf:String):Observable<Respuesta>
 
     @GET("temas")
-    fun getTemas():Observable<Temas>
+    fun getTemas():Observable<Respuesta>
 
     @GET("tema/{tema}/comentarios")
-    fun getComentarios(@Path("tema")idTema: Int)
+    fun getComentarios(@Path("tema")idTema: String):Observable<Respuesta>
 
     @POST("user")
-    fun addUser(@Body user: User)
+    fun addUser(@Body user: User):Observable<String>
 
     @POST("tema")
-    fun addTema(@Body tema:Tema)
+    fun addTema(@Body tema:Tema):Observable<String>
 
     @POST("tema/{id}/comentario")
     fun addComentario(
-            @Path ("id") idTema: Int ,
+            @Path ("id") idTema: String ,
             @Body  comentario: Comentario
 
-    )
+    ):Observable<String>
 
 
 
@@ -52,7 +50,7 @@ interface ForoApi {
             val retrofit = Retrofit.Builder()
                     .addConverterFactory(GsonConverterFactory.create())
                     .addCallAdapterFactory(RxJavaCallAdapterFactory.create())
-                    .baseUrl("172.19.105.1/foroslim/")
+                    .baseUrl("http://www.iesazarquiel.es/paco/foroslim/")
                     .build()
             return retrofit.create(ForoApi::class.java)
         }
